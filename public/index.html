@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" ng-app="alurapic">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
@@ -11,16 +12,16 @@
         <script src="js/controllers/fotos-controller.js"></script>
         <script src="js/directives/minhas-diretivas.js"></script>
     </head>
+
     <body ng-controller="FotosController">
         <div class="container">
             <h1 class="text-center">Alurapic</h1>
             <hr>
             <h3 class="text-center">Some animals pictures</h3>
             <meu-painel class="col-md-3" ng-repeat="foto in fotos" titulo="{{foto.titulo}}">
-                        <img class="img-responsive center-block" src="{{foto.url}}" alt="{{foto.titulo}}" />
+                <img class="img-responsive center-block" src="{{foto.url}}" alt="{{foto.titulo}}" />
             </meu-painel>
-
-
-        </div> <!-- fim container -->        
+        </div> <!-- fim container -->  
     </body>
+
 </html>
