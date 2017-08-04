@@ -4,6 +4,7 @@ angular.module("alurapic").controller("FotosController", function($scope, $http)
 
     $http.get('v1/fotos')
         .success(function(dados){
+            console.log(dados)
             $scope.fotos = dados;
         })
         .error(function(error){
